@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<title> Design WEb untuk parkir cerdas</title>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300.400.500.700" rel = "stylesheet">
+	<script src = "https://use.fontawesome.com/939e9dd52c.js"></script>
+	
+	<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+	<h1> Design Parkir</h1>
+	
+	
+	<div class="kelas1" align="left">
+		<!--<h1 id="lanta1" align = "left"> LANTAI 1</h1> --->
+		<div id="lantai1">
+			<div id="tembok1"> </div>
+			<div id="tembok2"> </div>
+			<div id="tembok3"> </div>
+			<div id="garis1"></div>
+			<div id="garis2"> </div>
+			<div id="garis3"></div>
+			<div id="garis4"></div>
+			<div id="garis5"></div>
+			<div id="garis6"></div>
+			<div id="garis7"></div>
+			<div id="garis8"></div>
+			<div id="garis9"></div>
+			<div id="garis10"></div>
+			<div id="garis11"></div>
+			<div id="garis12"></div>
+			<div id="garis13"></div>
+			<div id="garis14"></div>
+			<div id="garis15"></div>
+			<p id="arah1"> &larr;</p>
+			<p id="arah2"> &uarr;</p>
+			<p id="arah3"> &rarr;</p>
+			<p id="arah4"> &rarr;</p>
+			<p id="arah5"> &larr;</p>
+			<p id="arah6"> &darr;</p>
+			<p id="arah7"> &rarr;</p>
+			<p id="masuk"> MASUK</p>
+			<p id="keluar"> KELUAR</p>
+			<p id="naik"> Naik Ke lantai 2</p>
+			<p id="char_lantai1"> LANTAI 1</p>
+			
+			 <div class="A01">
+				
+				<div id="A011"><p id="A01_kondisi" align="center"> A01
+				kondisi1</p> </div>
+				
+			</div>
+			
+			<div class="A02">
+				<div id="A022"><p id="A02_kondisi" align="center"> A02
+				kondisi2</p> </div>
+			</div>
+			
+			<div class="A03">
+				<div id="A033"><p id="A03_kondisi" align="center"> A03
+				kondisi3</p></div>
+			</div>
+			
+			<div class="A04">
+				<div id="A044"><p id="A04_kondisi" align="center"> A04
+				kondisi4</p></div>
+			</div>
+			
+			<div class="A05">
+				<div id="A055"><p id="A05_kondisi" align="center"> A05
+				kondisi5</p></div>
+			</div>
+			
+		</div>	
+	</div>
+	
+	<div class="kelas2">
+		<!--<h1 id="lanta1" align = "left"> LANTAI 1</h1> --->
+		<div id="lantai1">
+			<div id="tembok1"> </div>
+			<div id="tembok2"> </div>
+			<div id="tembok3"> </div>
+			<div id="garis1"></div>
+			<div id="garis2"></div>
+			<div id="garis3"></div>
+			<div id="garis4"></div>
+			<div id="garis5"></div>
+			<div id="garis6"></div>
+			<div id="garis7"></div>
+			<div id="garis8"></div>
+			<div id="garis9"></div>
+			<div id="garis10"></div>
+			<div id="garis11"></div>
+			<div id="garis12"></div>
+			<div id="garis13"></div>
+			<div id="garis14"></div>
+			<div id="garis15"></div>
+			<p id="arah1"> &larr;</p>
+			<p id="arah2"> &uarr;</p>
+			<p id="arah3"> &rarr;</p>
+			<p id="arah4"> &rarr;</p>
+			<p id="arah5"> &larr;</p>
+			<p id="arah6"> &darr;</p>
+			<p id="arah7"> &rarr;</p>
+			<p id="masuk2"> Dari Lantai 1</p>
+			<p id="keluar"> KELUAR</p>
+			<p id="naik2"> Naik Ke lantai 3</p>
+			<p id="char_lantai2"> LANTAI 2</p>
+			
+			<div class="B01">
+				<div id="B011"><p id="B01_kondisi" align="center"> B01
+				kondisi1</p></div>
+			</div>
+			
+			<div class="B02">
+				<div id="B022"><p id="B02_kondisi" align="center"> B02
+				kondisi2</p></div>
+			</div>
+			
+			<div class="B03">
+				<div id="B033"><p id="B03_kondisi" align="center"> B03
+				kondisi3</p></div>
+			</div>
+			
+			<div class="B04">
+			<div id="B044"><p id="B04_kondisi" align="center"> B04
+			kondisi4</p></div>
+			</div>
+			
+			<div class="B05">
+			<div id="B055"><p id="B05_kondisi" align="center"> B05
+			kondisi5</p></div>
+			</div>
+			
+		</div>	
+	</div>
+	
+	<!--- membuat tempat tersedia dan jumlah di dalam -->
+	<div class="sedia">
+		<div id="box_sedia"><p class="k_sedia" > Jumlah tersedia</p>
+		<p class="jml_sedia"><p id="jml_sedia1">3</p></p></div>
+	</div>
+	
+	<div class="dalam">
+		<div id="kon_dalam"><p class="k_dalam" align="center"> Jumlah Kendaraan <br/>    di dalam</p>
+		<p class="jml_dalam"><p id="jml_dalam1">15</p></p> </div>
+	</div>
+	
+	
+	
+	
+	
+	<button id="submitBtn" onclick=submitClick()><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+	
+	
+	<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyD-vY-qcv2-yRqvhzkMozJRjF_85CPrsTI",
+		authDomain: "smartmonitoringparking.firebaseapp.com",
+		databaseURL: "https://smartmonitoringparking.firebaseio.com",
+		projectId: "smartmonitoringparking",
+		storageBucket: "",
+		messagingSenderId: "450856907240"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="index.js"></script>
+	
+	
+	
+</body>
+</html>
